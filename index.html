@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INGRES Virtual Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chat-toggle">
+    <img src="https://cdn-icons-png.flaticon.com/512/134/134914.png" alt="Chat">
+    <span>Chat with INGRES</span>
+  </div>
+
+  <div id="chatbox">
+    <div id="header">
+      <span><img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Bot"> INGRES Assistant</span>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <select id="langSelect">
+          <option value="en-US">English</option>
+          <option value="bn-BD">বাংলা</option>
+          <option value="hi-IN">हिन्दी</option>
+        </select>
+        <span id="closeBtn">✖</span>
+      </div>
+    </div>
+    <div id="messages"></div>
+    <div id="quick-replies">
+      <button class="quick-btn">What are the recharge and extraction figures for 2024–2025?</button>
+      <button class="quick-btn">Show a map of groundwater recharge for my region</button>
+      <button class="quick-btn">Explain how recharge and extraction are calculated</button>
+      <button class="quick-btn">Switch to semi-critical or critical category data</button>
+    </div>
+    <div id="input-area">
+      <div id="input-wrapper">
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button id="micBtn">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="Mic">
+        </button>
+        <button id="sendBtn">
+          <img src="https://www.vhv.rs/dpng/d/437-4370644_send-icon-png-image-free-download-searchpng-whatsapp.png" alt="Send">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
